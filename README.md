@@ -1,3 +1,5 @@
+This web is for you to create mocking API, it's free to use, just create it, copy it, and consume it 😬😬😬
+
 How to run?
 
 - Clone repo (im using vanilla JS)
