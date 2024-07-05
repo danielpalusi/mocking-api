@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mocking API</title>
+    <link rel="stylesheet" href="style.css?version=7" />
+
+    <script defer src="script.js?version=7"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="notification"></div>
+      <button class="content-button">Add API</button>
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Method</th>
+            <th style="min-width: 100px">URL</th>
+            <th>Response Code</th>
+            <th>Request</th>
+            <th>Response</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="content-pagination"></div>
+      <div class="footer">
+        We are working on improving all of these features, find our
+        <a href="https://www.linkedin.com/in/hendro-prabowo/" target="_blank"
+          >backend</a
+        >
+        and
+        <a
+          href="https://www.linkedin.com/in/daniel-bos-putera-panggabean-5021b4145/"
+          target="_blank"
+          >frontend</a
+        >
+        on linkedin
+      </div>
+      <div class="popup">
+        <div class="notification"></div>
+        <h2 class="popup-title">Add API</h2>
+        <label for="name" class="required-field">Name:</label>
+        <input
+          type="text"
+          id="name"
+          class="name"
+          placeholder="Register API"
+          required
+        />
+        <label for="method" class="required-field">Method:</label>
+        <select id="method" class="method" required>
+          <option value="">Select</option>
+          <option value="GET">GET</option>
+          <option value="POST">POST</option>
+          <option value="PUT">PUT</option>
+          <option value="PATCH">PATCH</option>
+          <option value="DELETE">DELETE</option>
+        </select>
+        <label for="path" class="required-field">Path:</label>
+        <input
+          type="text"
+          id="path"
+          class="path"
+          placeholder="/api/v1/register"
+          required
+        />
+        <label for="response-code" class="required-field">Response Code:</label>
+        <input
+          type="text"
+          id="response-code"
+          class="response-code"
+          placeholder="200"
+          required
+        />
+        <div class="textarea-container">
+          <div class="textarea-group">
+            <label for="request">Request:</label>
+            <textarea
+              id="request"
+              class="request"
+              rows="5"
+              cols="33"
+              required
+            ></textarea>
+          </div>
+          <div class="textarea-group">
+            <label for="response" class="required-field">Response:</label>
+            <textarea
+              id="response"
+              class="response"
+              rows="5"
+              cols="33"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="popup-button__side">
+          <button class="popup-button__add">Add Mock</button>
+          <button class="popup-button__cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
