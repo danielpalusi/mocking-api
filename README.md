@@ -1,6 +1,6 @@
 How to run?
 
-- Clone repo
+- Clone repo (im using vanilla JS)
 - Open terminal
 - Run this code: "npm i"
 - I'm using live-server on VS Code
