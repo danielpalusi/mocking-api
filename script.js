@@ -221,7 +221,6 @@ const updateTableContent = async function () {
     );
     //pakai then harusnya, soalnya di await, bakal jalan async, sedangkan tableData dibawah
     //udah kita consume
-    console.log(tableData);
     let html = '';
     tableData.mock.forEach(mock => {
       html += `
@@ -283,7 +282,6 @@ const updateTableContent = async function () {
 };
 
 const init = async function () {
-  console.log('trig init');
   try {
     await updateTableContent();
 
