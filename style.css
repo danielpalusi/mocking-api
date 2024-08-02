@@ -27,7 +27,6 @@ select {
   width: 100%;
   margin: 0 auto;
   background-color: #fff;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -157,6 +156,13 @@ table tbody tr.active-row {
   background-color: #57796f;
 }
 
+.content-table td pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
 .popup-button__cancel:hover {
   background-color: #af6557;
 }
@@ -234,11 +240,6 @@ a {
   font-style: italic;
 }
 
-pre {
-  display: inline;
-  margin: 0;
-}
-
 .content-url {
   background-color: #8ec3b3;
   padding: 5px 10px;
@@ -247,4 +248,22 @@ pre {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
+}
+
+table th:nth-child(1),
+table th:nth-child(2),
+table th:nth-child(4),
+table th:nth-child(7) {
+  width: 10%;
+}
+
+table th:nth-child(3) {
+  width: 20%;
+}
+
+table th:nth-child(5),
+table th:nth-child(6) {
+  width: auto;
+  min-width: 15%;
+  max-width: 35%;
 }
